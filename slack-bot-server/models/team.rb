@@ -57,10 +57,11 @@ class Team
   end
 
   def self.purge!
+    # Desabilitei isso por enquanto
     # destroy teams inactive for two weeks
-    Team.where(active: false, :updated_at.lte => 2.weeks.ago).each do |team|
-      Mongoid.logger.info "Destroying #{team}, inactive since #{team.updated_at}, over two weeks ago."
-      team.destroy
-    end
+    #Team.where(active: false, :updated_at.lte => 2.weeks.ago).each do |team|
+     # Mongoid.logger.info "Destroying #{team}, inactive since #{team.updated_at}, over two weeks ago."
+     # team.destroy
+    #end
   end
 end
