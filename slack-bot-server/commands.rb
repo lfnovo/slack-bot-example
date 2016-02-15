@@ -1,7 +1,7 @@
-require 'slack-bot-server/commands/help'
-require 'slack-bot-server/commands/whoami'
-require 'slack-bot-server/commands/ping'
-require 'slack-bot-server/commands/headlines'
-require 'slack-bot-server/commands/weather'
-require 'slack-bot-server/commands/link'
-require 'slack-bot-server/commands/history'
+require 'slack-bot-server/commands/help' #to do
+require 'slack-bot-server/commands/whoami' #duh
+require 'slack-bot-server/commands/ping' #pong
+require 'slack-bot-server/commands/headlines' #traz headlines de alguns rss
+require 'slack-bot-server/commands/link' #reconhece links
+require 'slack-bot-server/commands/history' #brincadeira, por enquanto
+require 'slack-bot-server/commands/whatyougot' #ultimos links postados 

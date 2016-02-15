@@ -9,8 +9,8 @@ module SlackBotServer
   			uri = URI.extract(match.to_s)[0] #to do: só estamos pegando a primeira - pegar todas depois
 
         link = ChatLink.new
-        #to do: pegar o link batendo na URL
-
+        #to do: pegar o titulo batendo na URL
+        #to do: reconhecer a mesma URL postada varias vezes e aumentar sua popularidade?
 
         link.uri = uri
         link.team_id = client.team.team_id
