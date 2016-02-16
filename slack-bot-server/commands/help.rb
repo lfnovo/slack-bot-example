@@ -10,12 +10,14 @@ General
 
 help               - get this helpful message
 whoami             - print your username
+feedback           - sends any comment, suggestion or bug report straight to us
+ping               - just so you know I'm alive. :)
+
 
 ```
 EOS
       def self.call(client, data, _match)
-        client.say(channel: data.channel, text: [HELP, SlackBotServer::INFO].join("\n"))
-        client.say(channel: data.channel, gif: 'help')
+        client.say(channel: data.channel, text: HELP)
         logger.info "HELP: #{client.team}, user=#{data.user}"
       end
     end
