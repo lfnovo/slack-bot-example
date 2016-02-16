@@ -3,6 +3,8 @@ module SlackBotServer
     class Feedback < SlackRubyBot::Commands::Base
       def self.call(client, data, match)
         puts data.to_s
+
+        #todo: faltou pegar o email do usuario aqui
         fb = FeedbackMessage.new
         fb.team_id = client.team.team_id
         fb.message = data.text
