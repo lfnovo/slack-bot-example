@@ -17,6 +17,7 @@ gem 'newrelic-slack-ruby-bot'
 gem 'rack-rewrite'
 gem 'rack-server-pages'
 gem 'simple-rss'
+gem 'slack-notifier'
 
 
 

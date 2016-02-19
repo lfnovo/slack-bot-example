@@ -53,6 +53,11 @@ class Team
     team.name = info['team']['name']
     team.domain = info['team']['domain']
     team.save!
+
+    #todo: encapsular isso em algum lugar (nao sei onde) :)
+    notifier = Slack::Notifier.new "https://hooks.slack.com/services/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"
+    notifier.ping "New team signed up: #{client.team}"
+
     team
   end
 
